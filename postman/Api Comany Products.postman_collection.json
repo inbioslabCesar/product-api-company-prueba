@@ -1,0 +1,63 @@
+{
+  "info": {
+    "_postman_id": "41889c13-e904-488d-be4e-4a197f31d0ca",
+    "name": "Api Comany Products",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "19702971"
+  },
+  "item": [
+    {
+      "name": "products",
+      "item": [
+        {
+          "name": "/products",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:4000/products",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "4000",
+              "path": ["products"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "/products",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"laptop hp\",\r\n    \"category\": \"laptops\",\r\n    \"price\": 999.99,\r\n    \"imgURL\": \"https://www.lenovo.com/medias/?context=bWFzdGVyfHJvb3R8NDgwMDM0fGltYWdlL3BuZ3xoODYvaGVhLzEzMjU1MTI1MjcwNTU4LnBuZ3w0ZWVkNWQ3ZGI1NzgyMjIxNDFkZmJlNmRjODE4NjMxMTYzM2RhMWMxZTNhNGY4MWUyODA2NjM0ZTkyNjlmM2U0\"\r\n\r\n}"
+            },
+            "url": {
+              "raw": "http://localhost:4000/products",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "4000",
+              "path": ["products"]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "users",
+      "item": []
+    },
+    {
+      "name": "auth",
+      "item": []
+    }
+  ]
+}
